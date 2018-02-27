@@ -165,6 +165,9 @@ logisticReg.fit(x_train,y_train)
 
 y_pred= logisticReg.predict(x_test)
 
+#Calculating accuracy of the model
+accuracy = round(logisticReg.score(x_train, y_train) * 100, 2)
+
 #Writing the predictions to a csv file
 df=pd.DataFrame(dict(PassengerId = result, Survived = y_pred)).reset_index()
 df.drop('index', axis=1, inplace=True)
