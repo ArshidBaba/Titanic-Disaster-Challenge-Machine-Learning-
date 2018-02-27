@@ -160,10 +160,10 @@ x_test=test.iloc[:,:]
 #Training and Predicting 
 
 from sklearn.linear_model import LogisticRegression
-logreg=LogisticRegression()
-logreg.fit(x_train,y_train)
+logisticReg=LogisticRegression()
+logisticReg.fit(x_train,y_train)
 
-y_pred= logreg.predict(x_test)
+y_pred= logisticReg.predict(x_test)
 
 #Writing the predictions to a csv file
 df=pd.DataFrame(dict(PassengerId = result, Survived = y_pred)).reset_index()
