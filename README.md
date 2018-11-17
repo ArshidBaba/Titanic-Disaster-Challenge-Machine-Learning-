@@ -1,2 +1,2 @@
 # Titanic-Disaster-Challenge
-Titanic disaster challenge is the beginners challenge on kaggle
+Titanic disaster challenge is the machine learning challenge on kaggle
